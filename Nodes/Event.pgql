@@ -6,8 +6,10 @@ type Event implements GraphNode
 @properties(expires: 0, editable: true, volatile: false, revisionable: false) 
 {
     id: ID,
+    title: String! @constraints(maxLength:80),
     description: String!,
+    event_date: Date!,
+    max_attendees:  Int,
+    location: String,
     create_date: Date! @now,
-    max_attendees:  Int
-    location: String
 }

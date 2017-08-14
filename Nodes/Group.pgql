@@ -6,6 +6,7 @@ type Group implements GraphNode
 @properties(expires: 0, editable: true, volatile: false, revisionable: false) 
 {
     id: ID,
+    title: String! @constraints(maxLength:80),
     description: String!,
     create_date: Date! @now
 }
