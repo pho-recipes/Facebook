@@ -30,7 +30,7 @@ class Event extends Foundation\AbstractGraphDP {
     public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Kernel\Foundation\AbstractActor $actor, \Pho\Lib\Graph\GraphInterface $graph , string $description, ?int $max_attendees, ?string $location)
     {
         $this->registerIncomingEdges(UserOut\Create::class);
-        $this->registerIncomingEdges(UserOut\Consume::class);
+        $this->registerIncomingEdges(Edges\Consume::class);
         parent::__construct($kernel, $actor, $graph);
                 $this->setDescription($description, true);
         $this->setCreateDate(time(), true);
@@ -43,8 +43,8 @@ class Event extends Foundation\AbstractGraphDP {
 }
 
 /*****************************************************
- * Timestamp: 1502497884
- * Size (in bytes): 2390
- * Compilation Time: 3639
- * c7c2c61b40a44b0ddbf7e36e2fb719da
+ * Timestamp: 1502752003
+ * Size (in bytes): 2388
+ * Compilation Time: 1933
+ * 05432573dd89b5b4dd10d1957f9a7976
  ******************************************************/

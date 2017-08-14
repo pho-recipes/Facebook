@@ -30,7 +30,7 @@ class Group extends Foundation\AbstractGraphDP {
     public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Kernel\Foundation\AbstractActor $actor, \Pho\Lib\Graph\GraphInterface $graph , string $description)
     {
         $this->registerIncomingEdges(UserOut\Create::class);
-        $this->registerIncomingEdges(UserOut\Consume::class);
+        $this->registerIncomingEdges(Edges\Consume::class);
         parent::__construct($kernel, $actor, $graph);
                 $this->setDescription($description, true);
         $this->setCreateDate(time(), true);
@@ -41,8 +41,8 @@ class Group extends Foundation\AbstractGraphDP {
 }
 
 /*****************************************************
- * Timestamp: 1502497884
- * Size (in bytes): 1790
- * Compilation Time: 3640
- * 66a6960ca0098298a743b60478755c91
+ * Timestamp: 1502752003
+ * Size (in bytes): 1788
+ * Compilation Time: 1933
+ * 596ffa8fbd03e4a7c070ccfbc4e970d0
  ******************************************************/

@@ -29,10 +29,10 @@ class Photo extends Foundation\AbstractObjectDP {
 
     public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Kernel\Foundation\AbstractActor $actor, \Pho\Lib\Graph\GraphInterface $graph , string $url)
     {
-        $this->registerIncomingEdges(UserOut\Post::class);
-        $this->registerIncomingEdges(UserOut\React::class);
-        $this->registerIncomingEdges(UserOut\Comment::class);
-        $this->registerIncomingEdges(UserOut\Consume::class);
+        $this->registerIncomingEdges(Edges\Post::class);
+        $this->registerIncomingEdges(Edges\React::class);
+        $this->registerIncomingEdges(Edges\Comment::class);
+        $this->registerIncomingEdges(Edges\Consume::class);
         parent::__construct($kernel, $actor, $graph);
                 $this->setUrl($url, true);
         $this->setCreateTime(time(), true);
@@ -43,8 +43,8 @@ class Photo extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1502497884
- * Size (in bytes): 1891
- * Compilation Time: 3641
- * bbad500d26cc25b8ca5cdc80a08676da
+ * Timestamp: 1502752003
+ * Size (in bytes): 1883
+ * Compilation Time: 1934
+ * 759844097d439233130bab364255cb8b
  ******************************************************/

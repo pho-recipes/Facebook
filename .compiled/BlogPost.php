@@ -29,10 +29,10 @@ class BlogPost extends Foundation\AbstractObjectDP {
 
     public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Kernel\Foundation\AbstractActor $actor, \Pho\Lib\Graph\GraphInterface $graph , string $title, string $content)
     {
-        $this->registerIncomingEdges(UserOut\Post::class);
-        $this->registerIncomingEdges(UserOut\React::class);
-        $this->registerIncomingEdges(UserOut\Comment::class);
-        $this->registerIncomingEdges(UserOut\Consume::class);
+        $this->registerIncomingEdges(Edges\Post::class);
+        $this->registerIncomingEdges(Edges\React::class);
+        $this->registerIncomingEdges(Edges\Comment::class);
+        $this->registerIncomingEdges(Edges\Consume::class);
         parent::__construct($kernel, $actor, $graph);
                 $this->setTitle($title, true);
         $this->setContent($content, true);
@@ -44,8 +44,8 @@ class BlogPost extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1502497884
- * Size (in bytes): 2180
- * Compilation Time: 3639
- * 317d5099ed0532ae1f505edc093eb703
+ * Timestamp: 1502752003
+ * Size (in bytes): 2172
+ * Compilation Time: 1932
+ * 12280434e07d075549d307246d6befdf
  ******************************************************/
