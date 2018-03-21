@@ -6,6 +6,6 @@ type Photo implements ObjectNode
 @properties(expires: 0, editable: false, volatile: false, revisionable: false) 
 {
     id: ID!,
-    url: String! @constraints(regex: "^https?:.+$"),
+    url: String! @constraints(format: "url"),
     create_time: Date! @now
 }
