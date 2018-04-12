@@ -25,9 +25,9 @@ class User extends Foundation\AbstractActorDP {
     const DEFAULT_MOD = 0x07554;
     const DEFAULT_MASK = 0xfffff;
 
-    const FIELDS = "{\"password\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"uuid\":null,\"regex\":\"^[a-zA-Z0-9_]{4,12}$\",\"greaterThan\":null,\"lessThan\":null},\"directives\":{\"md5\":true,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\"}},\"join_time\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"uuid\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null},\"directives\":{\"md5\":false,\"now\":true,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\"}},\"birthday\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"uuid\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null},\"directives\":{\"md5\":false,\"now\":false,\"default\":411436800}},\"about\":{\"constraints\":{\"minLength\":null,\"maxLength\":\"255\",\"uuid\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null},\"directives\":{\"md5\":false,\"now\":false,\"default\":\"\"}}}";
+    const FIELDS = "{\"password\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":\"\\/^[a-zA-Z0-9_]{4,12}$\\/\",\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":true,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"join_time\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":true,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"birthday\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":411436800,\"unique\":false,\"index\":false}},\"about\":{\"constraints\":{\"minLength\":null,\"maxLength\":\"255\",\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"\",\"unique\":false,\"index\":false}}}";
 
-    public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Lib\Graph\GraphInterface $graph , string $password, ?int $birthday = 411436800, ?string $about = "")
+    public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Lib\Graph\GraphInterface $graph , string $password, ?string $birthday = 411436800, ?string $about = "")
     {
         $this->registerIncomingEdges(UserOut\Follow::class);
         $this->registerIncomingEdges(StatusUpdateOut\Mention::class);
@@ -50,7 +50,7 @@ class User extends Foundation\AbstractActorDP {
         parent::__construct($kernel, $graph);
                 $this->setPassword($password, true);
         $this->setJoinTime(time(), true);
-        $this->setBirthday($birthday, true);
+        $this->setBirthday(strtotime($birthday), true);
         $this->setAbout($about, true);
 
         $this->persist();
@@ -59,8 +59,8 @@ class User extends Foundation\AbstractActorDP {
 }
 
 /*****************************************************
- * Timestamp: 1502752003
- * Size (in bytes): 3537
- * Compilation Time: 1935
- * 37a3f02f7ef6cbb68e3aa724ca925728
+ * Timestamp: 1523555561
+ * Size (in bytes): 3803
+ * Compilation Time: 15
+ * ebd4a2ae5f0de74f03ed2b8dcafefdf5
  ******************************************************/

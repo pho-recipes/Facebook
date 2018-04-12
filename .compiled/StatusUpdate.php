@@ -25,7 +25,7 @@ class StatusUpdate extends Foundation\AbstractObjectDP {
     const DEFAULT_MOD = 0x07500;
     const DEFAULT_MASK = 0xfffff;
 
-    const FIELDS = "{\"content\":{\"constraints\":{\"minLength\":null,\"maxLength\":\"255\",\"uuid\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null},\"directives\":{\"md5\":false,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\"}},\"create_time\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"uuid\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null},\"directives\":{\"md5\":false,\"now\":true,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\"}}}";
+    const FIELDS = "{\"content\":{\"constraints\":{\"minLength\":null,\"maxLength\":\"255\",\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"create_time\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":true,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}}}";
 
     public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Kernel\Foundation\AbstractActor $actor, \Pho\Lib\Graph\GraphInterface $graph , string $content)
     {
@@ -45,8 +45,8 @@ class StatusUpdate extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1502752003
- * Size (in bytes): 2058
- * Compilation Time: 1935
- * 77415b5230e085cc4a29362f2aa5ae0a
+ * Timestamp: 1523555561
+ * Size (in bytes): 2180
+ * Compilation Time: 15
+ * 55ddf719857c1e9d0db84baa3f298e47
  ******************************************************/
