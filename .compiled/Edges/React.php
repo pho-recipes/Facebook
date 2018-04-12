@@ -56,7 +56,7 @@ class ReactPredicate extends Foundation\ActorOut\SubscribePredicate
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 1729
- * Compilation Time: 10
- * 59719ac5fc82e188c8e2d87fbf25903c
+ * Size (in bytes): 1728
+ * Compilation Time: 9
+ * 6100012b4d547eb9615bbc7f6c146d77
  ******************************************************/
