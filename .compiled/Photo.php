@@ -27,6 +27,9 @@ class Photo extends Foundation\AbstractObjectDP {
 
     const FIELDS = "{\"url\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":\"url\"},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"create_time\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":true,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}}}";
 
+    const FEED_SIMPLE = "";
+    const FEED_AGGREGATED = "";
+
     public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Kernel\Foundation\AbstractActor $actor, \Pho\Lib\Graph\GraphInterface $graph , string $url)
     {
         $this->registerIncomingEdges(Edges\Post::class);
@@ -43,8 +46,8 @@ class Photo extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1523556740
- * Size (in bytes): 1997
+ * Timestamp: 1523668278
+ * Size (in bytes): 2058
  * Compilation Time: 14
- * b2cccd78604e501fc2c1ed082e6ac860
+ * 1bb222b0c67c9dfb3d3d7e834dd75af0
  ******************************************************/

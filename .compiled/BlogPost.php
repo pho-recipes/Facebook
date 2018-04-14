@@ -27,6 +27,9 @@ class BlogPost extends Foundation\AbstractObjectDP {
 
     const FIELDS = "{\"title\":{\"constraints\":{\"minLength\":null,\"maxLength\":\"140\",\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"content\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"create_time\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":true,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}}}";
 
+    const FEED_SIMPLE = "";
+    const FEED_AGGREGATED = "";
+
     public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Kernel\Foundation\AbstractActor $actor, \Pho\Lib\Graph\GraphInterface $graph , string $title, string $content)
     {
         $this->registerIncomingEdges(Edges\Post::class);
@@ -44,8 +47,8 @@ class BlogPost extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1523556740
- * Size (in bytes): 2356
+ * Timestamp: 1523668278
+ * Size (in bytes): 2417
  * Compilation Time: 13
- * 555176673616b6fb7be69efc9516dd3f
+ * 753bd1f4d62ca5ac35ce92b2266de8d1
  ******************************************************/

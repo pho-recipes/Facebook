@@ -27,6 +27,9 @@ class Group extends Foundation\AbstractGraphDP {
 
     const FIELDS = "{\"title\":{\"constraints\":{\"minLength\":null,\"maxLength\":\"80\",\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"description\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"create_date\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":true,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}}}";
 
+    const FEED_SIMPLE = "";
+    const FEED_AGGREGATED = "";
+
     public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Kernel\Foundation\AbstractActor $actor, \Pho\Lib\Graph\GraphInterface $graph , string $title, string $description)
     {
         $this->registerIncomingEdges(UserOut\Create::class);
@@ -42,8 +45,8 @@ class Group extends Foundation\AbstractGraphDP {
 }
 
 /*****************************************************
- * Timestamp: 1523556740
- * Size (in bytes): 2253
- * Compilation Time: 13
- * 9b80ea61ffc31bb11e56c7e84098296e
+ * Timestamp: 1523668278
+ * Size (in bytes): 2314
+ * Compilation Time: 14
+ * 0c5237888d2bf465cb71ab05b9c83d1a
  ******************************************************/
