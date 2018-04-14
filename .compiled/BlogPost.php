@@ -47,8 +47,8 @@ class BlogPost extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1523674988
+ * Timestamp: 1523676759
  * Size (in bytes): 2417
  * Compilation Time: 13
- * 29a189a8e13f0861caff8e0e9056a9c5
+ * fa7d6dfe075826206e17c42cd0b6f9ce
  ******************************************************/

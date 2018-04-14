@@ -46,8 +46,8 @@ class Video extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1523674988
+ * Timestamp: 1523676759
  * Size (in bytes): 2058
  * Compilation Time: 15
- * 29e6c4e0f89647e00cf8de3c966fbbed
+ * 18a8a68e14c3ee2ae4ac24a8bcb27cc3
  ******************************************************/
