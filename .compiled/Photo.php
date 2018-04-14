@@ -46,8 +46,8 @@ class Photo extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1523668278
+ * Timestamp: 1523669137
  * Size (in bytes): 2058
  * Compilation Time: 14
- * 1bb222b0c67c9dfb3d3d7e834dd75af0
+ * 6cc1a23003b854422ff87ae4d13c0ff6
  ******************************************************/
