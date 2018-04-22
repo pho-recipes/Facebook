@@ -42,13 +42,14 @@ class BlogPost extends Foundation\AbstractObjectDP {
         $this->setCreateTime(time(), true);
 
         $this->persist();
+        $this->context()->emit("particle.formed", [$this]);
     }
 
 }
 
 /*****************************************************
- * Timestamp: 1523676759
- * Size (in bytes): 2417
+ * Timestamp: 1524372085
+ * Size (in bytes): 2477
  * Compilation Time: 13
- * fa7d6dfe075826206e17c42cd0b6f9ce
+ * 9e946a04f8e44ca1931124b2a24b15fa
  ******************************************************/

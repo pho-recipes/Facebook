@@ -43,13 +43,14 @@ class StatusUpdate extends Foundation\AbstractObjectDP {
         $this->setCreateTime(time(), true);
 
         $this->persist();
+        $this->context()->emit("particle.formed", [$this]);
     }
 
 }
 
 /*****************************************************
- * Timestamp: 1523676759
- * Size (in bytes): 2241
+ * Timestamp: 1524372085
+ * Size (in bytes): 2301
  * Compilation Time: 14
- * 5fad537a8d0024d3cd522e7046e3fff7
+ * ae98579b829704b0031c78f1be21b7fd
  ******************************************************/

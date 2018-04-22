@@ -41,13 +41,14 @@ class Video extends Foundation\AbstractObjectDP {
         $this->setCreateTime(time(), true);
 
         $this->persist();
+        $this->context()->emit("particle.formed", [$this]);
     }
 
 }
 
 /*****************************************************
- * Timestamp: 1523676759
- * Size (in bytes): 2058
+ * Timestamp: 1524372085
+ * Size (in bytes): 2118
  * Compilation Time: 15
- * 18a8a68e14c3ee2ae4ac24a8bcb27cc3
+ * 2afa73f0df555002efd23030ceafe79f
  ******************************************************/

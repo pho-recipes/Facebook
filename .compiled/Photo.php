@@ -41,13 +41,14 @@ class Photo extends Foundation\AbstractObjectDP {
         $this->setCreateTime(time(), true);
 
         $this->persist();
+        $this->context()->emit("particle.formed", [$this]);
     }
 
 }
 
 /*****************************************************
- * Timestamp: 1523676759
- * Size (in bytes): 2058
+ * Timestamp: 1524372085
+ * Size (in bytes): 2118
  * Compilation Time: 14
- * d30b89c02fa543b6e0fb96d359692da5
+ * 368bfb3677041aa15353ec1f91f5d208
  ******************************************************/

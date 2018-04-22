@@ -43,13 +43,14 @@ class Event extends Foundation\AbstractGraphDP {
         $this->setCreateDate(time(), true);
 
         $this->persist();
+        $this->context()->emit("particle.formed", [$this]);
     }
 
 }
 
 /*****************************************************
- * Timestamp: 1523676759
- * Size (in bytes): 3409
+ * Timestamp: 1524372085
+ * Size (in bytes): 3469
  * Compilation Time: 13
- * e7fe0f2ff6ce568bdfa06860dd81a33e
+ * ec75b64c3092bc489e79590e06883c33
  ******************************************************/

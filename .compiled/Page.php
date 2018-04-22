@@ -52,13 +52,14 @@ class Page extends Foundation\AbstractActorDP {
         $this->setAbout($about, true);
 
         $this->persist();
+        $this->context()->emit("particle.formed", [$this]);
     }
 
 }
 
 /*****************************************************
- * Timestamp: 1523676759
- * Size (in bytes): 3181
+ * Timestamp: 1524372085
+ * Size (in bytes): 3241
  * Compilation Time: 14
- * a8d5d4116a06733b4569fd3098768da6
+ * 4f4958999c8f6fd4b4790b771a09af29
  ******************************************************/

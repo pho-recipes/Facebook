@@ -40,13 +40,14 @@ class Group extends Foundation\AbstractGraphDP {
         $this->setCreateDate(time(), true);
 
         $this->persist();
+        $this->context()->emit("particle.formed", [$this]);
     }
 
 }
 
 /*****************************************************
- * Timestamp: 1523676759
- * Size (in bytes): 2314
- * Compilation Time: 13
- * 928974f1bba4c01fdcf1d56af968e8b0
+ * Timestamp: 1524372085
+ * Size (in bytes): 2374
+ * Compilation Time: 14
+ * fd96103a25fa02977d514448545be6d7
  ******************************************************/

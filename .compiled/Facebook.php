@@ -36,13 +36,14 @@ class Facebook extends Foundation\AbstractGraphDP {
                 $this->setFounder($founder, true);
 
         $this->persist();
+        $this->context()->emit("particle.formed", [$this]);
     }
 
 }
 
 /*****************************************************
- * Timestamp: 1523676759
- * Size (in bytes): 1526
+ * Timestamp: 1524372085
+ * Size (in bytes): 1586
  * Compilation Time: 12
- * 4b35edeb5678dfcda2b62a7689a154de
+ * 5c95f098284c19e42ae7d882568023ae
  ******************************************************/
