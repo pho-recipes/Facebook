@@ -54,12 +54,15 @@ class ReactPredicate extends Foundation\ActorOut\SubscribePredicate
     const T_PERSISTENT = true;
 }
 /* Notification to load if it's a subtype of write or mention. */
+class ReactNotification extends Foundation\ActorOut\SubscribeNotification
+{
 
+}
 }
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 1801
- * Compilation Time: 9
- * 5886f0bfa3a0a839be38f59e8b98d3e0
+ * Size (in bytes): 1880
+ * Compilation Time: 57
+ * d346f5183554bba1bcd3b33fba496fc0
  ******************************************************/

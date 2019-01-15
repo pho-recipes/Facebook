@@ -49,8 +49,8 @@ class StatusUpdate extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1524372085
- * Size (in bytes): 2301
- * Compilation Time: 14
- * ae98579b829704b0031c78f1be21b7fd
+ * Timestamp: 1547537603
+ * Size (in bytes): 2302
+ * Compilation Time: 105
+ * 9a2708a014990314ee817991a216ce1f
  ******************************************************/

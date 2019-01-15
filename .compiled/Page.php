@@ -58,8 +58,8 @@ class Page extends Foundation\AbstractActorDP {
 }
 
 /*****************************************************
- * Timestamp: 1524372085
- * Size (in bytes): 3241
- * Compilation Time: 14
- * 4f4958999c8f6fd4b4790b771a09af29
+ * Timestamp: 1547537603
+ * Size (in bytes): 3242
+ * Compilation Time: 100
+ * 42fe5d90ca758df070f4f0134a3f9c63
  ******************************************************/
