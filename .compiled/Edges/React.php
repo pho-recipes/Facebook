@@ -63,6 +63,6 @@ class ReactNotification extends Foundation\ActorOut\SubscribeNotification
 /*****************************************************
  * Timestamp: 
  * Size (in bytes): 1880
- * Compilation Time: 57
- * d346f5183554bba1bcd3b33fba496fc0
+ * Compilation Time: 58
+ * 0363ff3176eddc9a1a4212aa2da425ae
  ******************************************************/
